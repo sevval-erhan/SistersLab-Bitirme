@@ -1,10 +1,12 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import PopularMovies from "./containers/PopularMovies";
-import MovieDetails from "./containers/MovieDetails";
-import Layout from "./components/Layout";
+import PopularMovies from "./pages/PopularMovies";
+import MovieDetails from "./pages/MovieDetails";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getGenres } from "./redux/genres";
+import Login from "./pages/Login/Login";
+import UserLayout from "./layout/UserLayout";
+import AuthLayout from "./layout/AuthLayout";
 
 
 function App() {
@@ -16,14 +18,15 @@ function App() {
   
   return (
     <BrowserRouter>
-      <Layout>
        <Routes>
-        <Route>
+        <Route element={<UserLayout />}> 
           <Route path="/" element={<PopularMovies />}></Route>
           <Route path="/movie/:id" element={<MovieDetails />}></Route>
         </Route>
+        <Route element={<AuthLayout />}>
+        <Route path="/login" element={<Login />}></Route>
+        </Route>
        </Routes>
-      </Layout>
     </BrowserRouter>
   );
 }

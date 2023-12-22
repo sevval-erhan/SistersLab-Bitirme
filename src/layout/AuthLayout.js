@@ -1,10 +1,8 @@
 import React from "react";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from "@mui/material";
-import { Link } from "react-router-dom";
-import logoImg from '../logo.png';
 import { styled } from "@mui/system";
-import SearchMoviesSuggestion from "../containers/SearchMoviesSuggestion";
+import { Outlet } from "react-router-dom";
 
 
 const darkTheme = createTheme({
@@ -31,20 +29,17 @@ const LayoutWrapper = styled('div')(({theme}) => ({
 
     }
 }));
-
-const Layout = ({children}) => {
-    return(
+const AuthLayout = () => {
+    return (
         <ThemeProvider theme={darkTheme}>
-            <CssBaseline />
-            <LayoutWrapper>
-                <Link to="/">
-                    <Img src={logoImg} alt="The movie db"></Img>
-                </Link>
-                <SearchMoviesSuggestion />
-                {children}
-            </LayoutWrapper>
-        </ThemeProvider>
-    );
+        <CssBaseline />
+        <LayoutWrapper>
+            <Outlet>
+                
+            </Outlet>
+        </LayoutWrapper>
+    </ThemeProvider>
+);
 }
 
-export default Layout;
+export default AuthLayout;
