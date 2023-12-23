@@ -15,20 +15,24 @@ Bu proje, modern web teknolojileri kullanılarak geliştirilmiş bir film uygula
 
 
 #Özellikler
--Film Arama: Film adlarına göre arama yapabilme.
--Popüler Filmler: En popüler filmleri görüntüleme.
--Film Detay: Film detaylarını görüntüleme.
+
+- **Film Arama**: Film adlarına göre arama yapabilme.
+
+- **Popüler Filmler**: En popüler filmleri görüntüleme.
+
+- **Film Detay**: Film detaylarını görüntüleme.
 
 
 
 #Proje Yapısı
+
 Projede aşağıdaki ana dizinler bulunmaktadır:
 
-src/components: React bileşenleri.
-src/redux: Redux eylemleri, reducer'ları ve sagas.
-src/sagas: Redux Saga dosyalarını içeren klasör.
-src/lib: Harici kütüphaneler ve yardımcı modüller.
-public: Genel dosyalar ve favicon.
+- **src/components**: React bileşenleri.
+- **src/redux: Redux eylemleri, reducer'ları ve sagas.
+- **src/sagas**: Redux Saga dosyalarını içeren klasör.
+- **src/lib **: Harici kütüphaneler ve yardımcı modüller.
+- **public**: Genel dosyalar ve favicon.
 
 
 
