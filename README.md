@@ -1,3 +1,40 @@
+# Movie-App Projesi
+
+Bu proje, modern web teknolojileri kullanılarak geliştirilmiş bir film uygulamasını içermektedir. Temel amacı, kullanıcılara geniş bir film veritabanı üzerinden film arama, popüler filmleri görüntüleme ve filmlerin detaylarını inceleme ve keşfetme imkanı sunmaktadır. Proje, aşağıdaki ana teknolojileri kullanmaktadır:
+
+## Kullanılan Teknolojiler
+
+- **React:** Kullanıcı arayüzünün oluşturulması ve etkileşimli bileşenlerin geliştirilmesi için kullanılmıştır. React, bileşen tabanlı bir yaklaşım sunarak geliştirme sürecini kolaylaştırmaktadır.
+
+- **Redux Toolkit:** Uygulama durumunun merkezi bir şekilde yönetilmesi için Redux Toolkit kullanılmıştır. Redux Toolkit, Redux'u daha kolay kullanılabilir ve anlaşılır hale getiren bir dizi yardımcı fonksiyon içerir.
+
+- **Redux Saga:** Uygulama içindeki asenkron işlemleri etkili bir şekilde yönetmek amacıyla Redux Saga kullanılmıştır. Özellikle API çağrıları ve diğer uzun süreçli işlemler Redux Saga yardımıyla yönetilir.
+
+- **Material-UI:** Kullanıcı arayüzünün tasarımında ve stilizasyonunda Material-UI kullanılmıştır. Material-UI, görsel açıdan çekici ve kullanıcı dostu arayüz bileşenleri sağlayarak geliştirme sürecini hızlandırmaktadır.
+
+
+
+#Özellikler
+-Film Arama: Film adlarına göre arama yapabilme.
+-Popüler Filmler: En popüler filmleri görüntüleme.
+-Film Detay: Film detaylarını görüntüleme.
+
+
+
+#Proje Yapısı
+Projede aşağıdaki ana dizinler bulunmaktadır:
+
+src/components: React bileşenleri.
+src/redux: Redux eylemleri, reducer'ları ve sagas.
+src/sagas: Redux Saga dosyalarını içeren klasör.
+src/lib: Harici kütüphaneler ve yardımcı modüller.
+public: Genel dosyalar ve favicon.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
